@@ -1,0 +1,97 @@
+@media (max-width: 1199.9px) {
+  .navbar-row{
+    padding: 0px 85px !important;
+  }
+  nav ul{
+    width: 680px !important;
+  }
+}
+@media (max-width: 1020.9px) {
+  .navbar-row{
+    padding: 0px 85px !important;
+  }
+  nav ul{
+    width: 660px !important;
+  }
+}
+
+@media (max-width: 991.9px) {
+  .all-col{
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+  }
+  .navbar-row{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  nav{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    height: auto !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .all-col{
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+  }
+  .navbar-row{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  nav{
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center;
+    height: 80px !important;
+    text-align: center;
+  }
+  nav #icon {
+    display: block !important;
+  }
+  nav ul {
+    display: block !important;
+    position: fixed;
+    width: 100% !important;
+    height: 100% !important;
+    background: #070724;
+    top: 80px;
+    left: -100%;
+    text-align: left;
+    transition: all 0.5s;
+    padding-bottom: 80px !important;
+    overflow-y: scroll;
+  }
+  nav li {
+    display: flex !important;
+    flex-direction: column !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    line-height: 80px !important;
+  }
+  .logo{
+    padding: 0 !important;
+  }
+  nav a {
+    font-size: 15px !important;
+  }
+  .circle-link{
+    display: block !important;
+  }
+  nav ul.show {
+    left: 0;
+  }
+  .show-icon{
+    display: block !important;
+  }
+  nav ul.close {
+    left: -100%;
+    transition: all 0.5s ease-in-out;
+  }
+}
