@@ -14,7 +14,7 @@ import { Col, Row } from 'react-bootstrap';
 function Mercury() {
   return (
     <BrowserRouter>
-      <Switch>
+      <div>
       <Row className="m-0 navbar-row">
         <Col className="all-col p-0 border">
           {
@@ -49,7 +49,7 @@ function Mercury() {
           }
         </Col>
       </Row>
-      </Switch>
+      </div>
     </BrowserRouter>
   );
 }
