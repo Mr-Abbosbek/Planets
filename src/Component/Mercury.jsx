@@ -20,16 +20,16 @@ function Mercury() {
           {
             Database.mercury.map((post)=>(
               <Row key={post.id}>
-                <Col className='col-8'>
+                <Col className='col-lg-8 col-md-12'>
                   <Switch>
                     <Route path={`/`} component={ImageL} exact />
                     <Route path={`/ ${""}`} component={ImageL1} exact />
                     <Route path={`/ ${" "}`} component={ImageL2} exact />
                   </Switch>
                 </Col>
-                <Col className='col-4'>
+                <Col className='col-lg-4 col-md-12'>
                   <h1 className='all-title text-white'>{post.name}</h1>
-                  <Row>
+                  <Row className='d-flex flex-lg-column'>
                     <Col>
                       <Switch>
                         <Route path={`/`} component={TextL} exact />
@@ -37,8 +37,6 @@ function Mercury() {
                         <Route path={`/ ${" "}`} component={TextL2} exact />
                       </Switch>
                     </Col>
-                  </Row>
-                  <Row>
                     <Col>
                       <ButtonL post={post} />
                     </Col>
