@@ -1,3 +1,39 @@
+/* fonts */
+@font-face {
+  font-family: 'Spartan';
+  src: url('./../fonts/Spartan-Regular.woff2') format('woff2'),
+      url('./../fonts/Spartan-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url('./../fonts/Spartan-Bold.woff2') format('woff2'),
+      url('./../fonts/Spartan-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Antonio';
+  src: url('./../fonts/Antonio-Medium.woff2') format('woff2'),
+      url('./../fonts/Antonio-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url('./../fonts/Spartan-Medium.woff2') format('woff2'),
+      url('./../fonts/Spartan-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 *{
   padding: 0;
   margin: 0;
@@ -22,6 +58,12 @@ ul{
 .navbar-row{
   padding: 0px 110px;
 }
+
+.all-title{
+  font-size: 80px;
+  font-family: "Antonio", "Arial", sans-serif;
+}
+
 nav{
   display: flex;
   align-items: center;
@@ -160,4 +202,13 @@ nav #icon{
   background: #fff;
   border-radius: 50%;
   margin-right: 15px;
+}
+
+
+
+
+/* === */
+
+.show-text{
+  display: none;
 }

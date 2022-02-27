@@ -1,7 +1,8 @@
 import React from "react";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import MercuryList from "./MercuryList";
+// import MercuryList from "./MercuryList";
+import Mercury from "./Mercury";
 import VenusList from "./VenusList";
 import Header from "./Header";
 import './../style/media.css';
@@ -15,7 +16,7 @@ function Router() {
     </div>
     <div className="App">
       <Switch>
-        <Route path="/" component={MercuryList} exact />
+        <Route path="/" component={Mercury} exact />
         <Route path="/venus" component={VenusList} exact />
       </Switch>
     </div>
