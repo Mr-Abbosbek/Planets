@@ -13,7 +13,7 @@ function ImageList0() {
                 if(p.id === 1){
                   return(
                     <div key={p.id} className="d-flex justify-content-center align-items-center">
-                      <Image src={p.img} alt="" />
+                      <Image src={p.img} alt="mercury overview" />
                     </div>
                   )
                 }
