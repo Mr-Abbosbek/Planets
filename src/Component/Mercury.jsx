@@ -38,7 +38,7 @@ function Mercury() {
                         <Route path={`/ ${" "}`} component={TextL2} exact />
                       </Switch>
                     </Col>
-                    <Col className="p-0 col-lg-12 col-md-5 col-sm-12 d-lg-block d-md-block d-sm-none">
+                    <Col className="p-0 col-lg-12 col-md-5 col-sm-12 d-lg-block d-md-block d-sm-none d-none">
                       <ButtonL post={post} />
                     </Col>
                   </Row>
