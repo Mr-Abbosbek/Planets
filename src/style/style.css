@@ -94,7 +94,7 @@ nav li{
 nav a{
   color: white;
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
   border: 1px solid transparent;
@@ -105,12 +105,12 @@ nav .nav-list a::after{
   content: "]";
   visibility: hidden;
   position: absolute;
-  font-size: 15px;
+  font-size: 11px;
   margin-top: -2px;
   right: -10px;
   transition: 0.2s;
 }
-nav .nav-list a:hover::after{
+nav .nav-list a:hover::after,nav .nav-list a:focus::after{
   visibility: visible;
   transform: translateX(5px);
 }
@@ -118,12 +118,12 @@ nav .nav-list a::before{
   content: "[";
   visibility: hidden;
   position: absolute;
-  font-size: 15px;
+  font-size: 11px;
   margin-top: -2px;
   left: -10px;
   transition: 0.2s;
 }
-nav .nav-list a:hover::before{
+nav .nav-list a:hover::before,nav .nav-list a:focus::before{
   visibility: visible;
   transform: translateX(-5px);
 }
@@ -207,8 +207,45 @@ nav #icon{
 
 
 
-/* === */
+/* ======================================================================================== */
 
-.show-text{
-  display: none;
+.button-navLink{
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff !important;
+  border-radius: 0 !important;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold !important;
+  font-family: Spartan;
+  letter-spacing: 2px;
+  width: 350px;
+}
+.button-navLink span{
+  font-size: 12px;
+}
+.button-navLink:before{
+  position: absolute;
+  top: -0.1px;
+  left: 0;
+  right: 0;
+  width: 100.1%;
+  height: 0%;
+  content: "";
+  background: #D14C32;
+  z-index: -1;
+  visibility: hidden;
+  border: 1px solid #D14C32;
+  transition: all 0.3s ease-in-out;
+}
+.button-navLink:hover::before{
+  visibility: visible;
+  height: 100.5%;
+}
+.button-navLink:focus{
+  box-shadow: none !important;
+}
+.button-navLink.active{
+  background: #419ebb;
+  box-shadow: none !important;
 }

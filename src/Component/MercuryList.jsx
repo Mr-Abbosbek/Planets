@@ -34,14 +34,14 @@ function MercuryList() {
         <Col className="all-col p-0 border">
           {Database.mercury.map((post) => (
             <Row key={post.id}>
-              <Col className="col-8 d-flex flex-column justify-content-center">
+              <Col className="col-9 d-flex flex-column justify-content-center">
                 {
                   post.features.map((img) => (
-                    <Image id={img.id_show} key={img.id} className="all-image w-50" src={img.img} />
+                    <Image id={img.id} key={img.id} className="all-image w-50" src={img.img} />
                   ))
                 }
               </Col>
-              <Col className="col-4">
+              <Col className="col-3">
                 <h1 className="text-white text-uppercase all-title">
                   {post.name}
                 </h1>
@@ -57,9 +57,9 @@ function MercuryList() {
                 </Row>
                 <Row>
                   <Col>
-                    {post.features.map((text) => (
-                      <div key={text.id}>
-                        <button id={text.id} onClick={(e)=>ButtonClick(e, `${text.id_show}`, `${text.id_show2}` )} className="tabLinks w-75 text-start mt-3 px-3 py-2 btn btn-outline-light"><span className="p-3">{text.id}</span>{text.name}</button>
+                    {post.features.map((btn) => (
+                      <div key={btn.id}>
+                        <button auto id={btn.id} onClick={(e)=>ButtonClick(e, `${btn.id}`, `${btn.id}` )} className="tabLinks w-75 text-start mt-3 px-3 py-2 btn btn-outline-light"><span className="p-3">{btn.id}</span>{btn.name}</button>
                       </div>
                     ))}
                   </Col>

@@ -66,6 +66,7 @@ const Date = {
       id: 1,
       name: "Mercury",
       wikipediaLink: "https://wikipedia.com",
+      wikipediaIcon: "./images/Shape.png",
       features: [
         {
           id: 1,
