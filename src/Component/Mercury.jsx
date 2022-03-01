@@ -30,7 +30,7 @@ function Mercury() {
                 </Col>
                 <Col className="col-xl-4 col-lg-5 col-md-12 col-sm-12 pt-5 px-0">
                   <Row className="d-flex flex-lg-column align-items-md-center justify-content-md-between m-0">
-                    <Col className="p-0 col-lg-12 col-md-6 col-sm-12 text-sm-center">
+                    <Col className="p-0 col-lg-12 col-md-6 col-sm-12 text-lg-start text-md-start text-sm-center text-center">
                       <h1 className="all-title text-white">{post.name}</h1>
                       <Switch>
                         <Route path={`/`} component={TextL} exact />
