@@ -14,7 +14,7 @@ function Router() {
     <div>
       <Header />
     </div>
-    <div className="App">
+    <div className="top-list">
       <Switch>
         <Route path="/" component={Mercury} exact />
         <Route path="/venus" component={VenusList} exact />

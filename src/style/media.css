@@ -47,6 +47,9 @@
 }
 
 @media (max-width: 767.9px) {
+  .top-list{
+    padding-top: 81px !important;
+  }
   .all-col{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -55,6 +58,8 @@
   .navbar-row{
     padding-left: 15px !important;
     padding-right: 15px !important;
+    display: flex !important;
+    justify-content: space-between !important;
   }
   nav{
     flex-direction: row !important;
@@ -119,6 +124,7 @@
     display: flex !important;
     justify-content: space-between !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    /* z-index: -1 !important; */
   }
   .button-navLink{
     width: auto !important;
@@ -130,5 +136,18 @@
   }
   .button-number{
     display: none;
+  }
+  .button-navLink:before{
+    display: none !important;
+  }
+  .button-navLink.active{
+    border-bottom: 4px solid #419ebb !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+  .planet-name{
+    height: 30px;
+    display: flex;
+    align-items: center;
   }
 }

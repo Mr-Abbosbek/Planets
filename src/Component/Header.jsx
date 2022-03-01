@@ -36,7 +36,7 @@ function Header() {
   };
 
   return (
-    <section className="">
+    <section className="header">
       <Row className="m-0 navbar-row">
         <Col className="all-col p-0">
           <nav>
