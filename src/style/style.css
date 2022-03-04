@@ -240,7 +240,7 @@ nav #icon{
 }
 .button-navLink:before{
   position: absolute;
-  top: -0.1px;
+  top: 0px;
   left: 0;
   right: 0;
   width: 100.1%;
@@ -254,7 +254,7 @@ nav #icon{
 }
 .button-navLink:hover::before{
   visibility: visible;
-  height: 100.9%;
+  height: 100.5%;
 }
 .button-navLink:focus{
   box-shadow: none !important;
