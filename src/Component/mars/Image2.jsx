@@ -6,14 +6,14 @@ function ImageList2() {
   return (
     <div>
       {
-        Database.mercury.map((post)=>(
+        Database.mars.map((post)=>(
           <div key={post.id}>
             {
               post.features.map((p)=>{
                 if(p.id === 3){
                   return(
                     <div key={p.id} className="d-flex justify-content-center align-items-center">
-                      <Image src={p.img} alt="mercury surface geology" className='image-planets' />
+                      <Image src={p.img} alt="mars surface geology" className='image-planets' />
                     </div>
                   )
                 }

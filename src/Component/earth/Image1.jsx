@@ -2,18 +2,18 @@ import React from 'react';
 import { Image } from 'react-bootstrap';
 import Database from "./../database/base";
 
-function ImageList2() {
+function ImageList1() {
   return (
     <div>
       {
-        Database.mercury.map((post)=>(
+        Database.earth.map((post)=>(
           <div key={post.id}>
             {
               post.features.map((p)=>{
-                if(p.id === 3){
+                if(p.id === 2){
                   return(
                     <div key={p.id} className="d-flex justify-content-center align-items-center">
-                      <Image src={p.img} alt="mercury surface geology" className='image-planets' />
+                      <Image src={p.img} alt="earth internal structure" className='image-planets' />
                     </div>
                   )
                 }
@@ -27,4 +27,4 @@ function ImageList2() {
   );
 }
 
-export default ImageList2;
+export default ImageList1;

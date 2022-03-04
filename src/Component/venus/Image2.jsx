@@ -6,7 +6,7 @@ function ImageList2() {
   return (
     <div>
       {
-        Database.mercury.map((post)=>(
+        Database.venus.map((post)=>(
           <div key={post.id}>
             {
               post.features.map((p)=>{

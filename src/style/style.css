@@ -215,8 +215,11 @@ nav #icon{
   margin-right: 15px;
 }
 
+/* ======================================================================================== */
 
-
+.image-planets{
+  width: 300px;
+}
 
 /* ======================================================================================== */
 
@@ -230,7 +233,7 @@ nav #icon{
   font-weight: bold !important;
   font-family: Spartan;
   letter-spacing: 2px;
-  width: 350px;
+  width: 100%;
 }
 .button-navLink span{
   font-size: 12px;
@@ -251,7 +254,7 @@ nav #icon{
 }
 .button-navLink:hover::before{
   visibility: visible;
-  height: 100.5%;
+  height: 100.9%;
 }
 .button-navLink:focus{
   box-shadow: none !important;
@@ -259,4 +262,25 @@ nav #icon{
 .button-navLink.active{
   background: #419ebb;
   box-shadow: none !important;
+}
+
+
+/* ================================================================= */
+
+.about-planets{
+  width: 23%;
+  padding: 20px 30px;
+  border: 1px solid rgba(255, 255, 255,0.2);
+}
+.about-planets p{
+  font-family: Spartan;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin: 0;
+}
+.about-planets h4{
+  text-transform: uppercase;
+  font-family: Antonio;
+  font-size: 40px;
+  margin: 0;
 }
