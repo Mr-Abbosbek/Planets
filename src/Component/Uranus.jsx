@@ -20,7 +20,18 @@ function Uranus() {
               className="m-0 d-d-lg-flex justify-content-lg-between"
             >
               <Col className="p-0 col-sm-12 col-12 d-lg-none d-md-none button-col">
-                <ButtonL post={post} />
+              {Database.menu.map((color) => {
+                      if (color.text === post.name) {
+                        return (
+                          <ButtonL
+                            key={color.id}
+                            post={post}
+                            color={color.background}
+                          />
+                        );
+                      }
+                      return null;
+                    })}
               </Col>
               <Col className="col-xl-8 col-lg-7 col-md-12 col-col-sm-12 col-12 py-lg-0 py-md-5 py-sm-5 py-5 px-0 d-flex align-items-center justify-content-center">
                 <Switch>
@@ -40,7 +51,18 @@ function Uranus() {
                     </Switch>
                   </Col>
                   <Col className="p-0 col-lg-12 col-md-5 col-sm-12 d-lg-block d-md-block d-sm-none d-none">
-                    <ButtonL post={post} />
+                  {Database.menu.map((color) => {
+                      if (color.text === post.name) {
+                        return (
+                          <ButtonL
+                            key={color.id}
+                            post={post}
+                            color={color.background}
+                          />
+                        );
+                      }
+                      return null;
+                    })}
                   </Col>
                 </Row>
               </Col>

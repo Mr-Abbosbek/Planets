@@ -1,7 +1,7 @@
 @media (max-width: 1300.9px) {
-  .button-navLink{
+  /* .button-navLink{
     width: 100% !important;
-  }
+  } */
 }
 @media (max-width: 1199.9px) {
   .navbar-row{
@@ -123,13 +123,13 @@
     width: 100% !important;
     display: flex !important;
     justify-content: space-between !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.2) !important;
     /* z-index: -1 !important; */
   }
   .button-navLink{
     width: auto !important;
     margin: 0 !important;
-    border: 0px !important;
+    border: 0px solid transparent;
   }
   .button-navLink span{
     font-size: 9px !important;
@@ -140,10 +140,13 @@
   .button-navLink:before{
     display: none !important;
   }
+  .button-navLink::after{
+    display: none !important;
+  }
   .button-navLink.active{
-    border-bottom: 4px solid #419ebb !important;
+    border: none;
+    border-bottom: 4px solid transparent;
     background: none !important;
-    box-shadow: none !important;
   }
   .planet-name{
     height: 30px;

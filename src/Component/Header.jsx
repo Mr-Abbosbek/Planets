@@ -12,7 +12,7 @@ function Header() {
         <NavLink
           exact
           to={post.url}
-          className="d-flex align-items-center justify-content-between"
+          className="d-flex align-items-center justify-content-between text-uppercase"
           activeStyle={{ color: `${post.background}` }}
           onClick={() => {
             document.querySelector("#icon").click();

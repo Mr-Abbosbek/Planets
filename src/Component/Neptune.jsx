@@ -16,11 +16,20 @@ function Neptune() {
       <Row className="m-0 navbar-row row-top">
         {Database.neptune.map((post) => (
           <Col className="all-col p-0" key={post.id}>
-            <Row
-              className="m-0 d-d-lg-flex justify-content-lg-between"
-            >
+            <Row className="m-0 d-d-lg-flex justify-content-lg-between">
               <Col className="p-0 col-sm-12 col-12 d-lg-none d-md-none button-col">
-                <ButtonL post={post} />
+                {Database.menu.map((color) => {
+                  if (color.text === post.name) {
+                    return (
+                      <ButtonL
+                        key={color.id}
+                        post={post}
+                        color={color.background}
+                      />
+                    );
+                  }
+                  return null;
+                })}
               </Col>
               <Col className="col-xl-8 col-lg-7 col-md-12 col-col-sm-12 col-12 py-lg-0 py-md-5 py-sm-5 py-5 px-0 d-flex align-items-center justify-content-center">
                 <Switch>
@@ -36,25 +45,38 @@ function Neptune() {
                     <Switch>
                       <Route path={`/neptune`} component={TextL} exact />
                       <Route path={`/neptune ${""}`} component={TextL1} exact />
-                      <Route path={`/neptune ${" "}`} component={TextL2} exact />
+                      <Route
+                        path={`/neptune ${" "}`}
+                        component={TextL2}
+                        exact
+                      />
                     </Switch>
                   </Col>
                   <Col className="p-0 col-lg-12 col-md-5 col-sm-12 d-lg-block d-md-block d-sm-none d-none">
-                    <ButtonL post={post} />
+                    {Database.menu.map((color) => {
+                      if (color.text === post.name) {
+                        return (
+                          <ButtonL
+                            key={color.id}
+                            post={post}
+                            color={color.background}
+                          />
+                        );
+                      }
+                      return null;
+                    })}
                   </Col>
                 </Row>
               </Col>
             </Row>
             <Row className="m-0 py-5">
               <Col className="p-0 pt-lg-5 pt-md-5 pt-sm-0 pt-0 d-flex justify-content-between text-white flex-wrap">
-                {
-                  post.about.map((about)=>(
-                    <div className="about-planets" key={about.id}>
-                      <p className='text-white-50 fw-bold'>{about.name}</p>
-                      <h4>{about.data}</h4>
-                    </div>
-                  ))
-                }
+                {post.about.map((about) => (
+                  <div className="about-planets" key={about.id}>
+                    <p className="text-white-50 fw-bold">{about.name}</p>
+                    <h4>{about.data}</h4>
+                  </div>
+                ))}
               </Col>
             </Row>
           </Col>
