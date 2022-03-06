@@ -46,7 +46,7 @@ function Saturn() {
               </Col>
             </Row>
             <Row className="m-0 py-5">
-              <Col className="p-0 pt-5 d-flex justify-content-between text-white flex-wrap">
+              <Col className="p-0 pt-lg-5 pt-md-5 pt-sm-0 pt-0 d-flex justify-content-between text-white flex-wrap">
                 {
                   post.about.map((about)=>(
                     <div className="about-planets" key={about.id}>
