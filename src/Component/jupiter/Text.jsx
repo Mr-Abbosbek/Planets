@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Database from "./../database/base";
 import { Image } from "react-bootstrap";
 
@@ -15,7 +14,7 @@ function Text() {
                   return(
                     <div key={p.id} className='text-white'>
                       <p>{p.text}</p>
-                      <p className='text-white-50 fw-bold'>Source: <Link to={post.wikipediaLink} className='text-white-50 fw-bold'> Wikipedia <Image src={post.wikipediaIcon} /></Link></p>
+                      <p className='text-white-50 fw-bold'>Source: <a href={post.wikipediaLink} className='text-white-50 fw-bold'> Wikipedia <Image src={post.wikipediaIcon} /></a></p>
                     </div>
                   )
                 }
